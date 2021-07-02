@@ -15,15 +15,27 @@ HTML source: https://github.com/swabhs/swabhs.github.io
 
 ## Instructions for HTML version
 
-First [fork](https://guides.github.com/activities/forking/) the theme from `https://github.com/swabhs/swabhs.github.io` to `github.com:<your-username>/<your-repo-name>` and do the following:
+First [fork](https://guides.github.com/activities/forking/) the theme from `https://github.com/swabhs/swabhs.github.io` to `github.com:<your-username>/<your-username>`  
+Note: the repository name should match with your username.  
 
+Next, clone the repository to your local machine to customine,
 ```bash
 $ git clone git@github.com:<your-username>/<your-repo-name>.git
 ```
 
 Now, feel free to customize the theme however you like (don't forget to change the name!).
+
+## How to do changes?
+
+Modify index.html in the main directory to customize your homepage. 
+Modify index.html in subdirectories (cv, projects, etc.) to update respecitve pages. 
+
 After you are done, **commit** your final changes.
-Now, you can deploy your website to [GitHub Pages](https://pages.github.com/) by running the deploy script:
+
+## Deployment 
+Your webpage is automatically deployed at your_username.github.io once you do commit.  
+Note: It will take time for changes to get reflected on the webpage.
+
 
 <!---
 ## Features
