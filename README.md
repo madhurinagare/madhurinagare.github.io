@@ -15,7 +15,8 @@ HTML source: https://github.com/swabhs/swabhs.github.io
 
 ## Instructions for HTML version
 
-First [fork](https://guides.github.com/activities/forking/) the theme from `https://github.com/swabhs/swabhs.github.io` to `github.com:<your-username>/<your-username>`  
+First [fork](https://guides.github.com/activities/forking/) the theme from `https://github.com/swabhs/swabhs.github.io`  
+Then go to repository settings and rename it to <your-username.github.io>   
 Note: the repository name should match with your username.  
 
 Next, clone the repository to your local machine to customine,
