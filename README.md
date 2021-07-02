@@ -25,7 +25,7 @@ Now, feel free to customize the theme however you like (don't forget to change t
 After you are done, **commit** your final changes.
 Now, you can deploy your website to [GitHub Pages](https://pages.github.com/) by running the deploy script:
 
-
+<!---
 ## Features
 
 ### Publications
@@ -101,7 +101,7 @@ You will then need to configure what image to display in your site's social medi
 This can be configured on a per-page basis, by setting the `og_image` page variable.
 If for an individual page this variable is not set, then the theme will fall back to a site-wide `og_image` variable, configurable in your `_config.yml`.
 In both the page-specific and site-wide cases, the `og_image` variable needs to hold the URL for the image you wish to display in social media previews.
-
+-->
 
 ## Contributing
 
