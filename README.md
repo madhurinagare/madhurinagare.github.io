@@ -80,7 +80,7 @@ ICBINB (NeurIPS: <a href="https://i-cant-believe-its-not-better.github.io/" targ
 
 
 ## Getting started
-
+This is an HTML version of the al-folio theme.
 For more about how to use Jekyll, check out [this tutorial](https://www.taniarascia.com/make-a-static-website-with-jekyll/).
 Why Jekyll? Read this [blog post](https://karpathy.github.io/2014/07/01/switching-to-jekyll/)!
 
