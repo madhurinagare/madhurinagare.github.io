@@ -8,8 +8,8 @@
 [![GitHub forks](https://img.shields.io/github/forks/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/fork)
 
 A simple, clean, and responsive [Jekyll](https://jekyllrb.com/) theme for academics.
-Markdown source: https://github.com/alshedivat/al-folio
-HTML source: https://github.com/swabhs/swabhs.github.io
+Markdown source: https://github.com/alshedivat/al-folio  
+HTML source: https://github.com/swabhs/swabhs.github.io  
 
 [![Preview](assets/img/al-folio-preview.png)](https://alshedivat.github.io/al-folio/)
 
