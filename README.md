@@ -13,7 +13,7 @@ HTML source: https://github.com/swabhs/swabhs.github.io
 
 [![Preview](assets/img/al-folio-preview.png)](https://alshedivat.github.io/al-folio/)
 
-## Getting started
+## Instructions for HTML version
 
 First [fork](https://guides.github.com/activities/forking/) the theme from `https://github.com/swabhs/swabhs.github.io` to `github.com:<your-username>/<your-repo-name>` and do the following:
 
