@@ -1,0 +1,81 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <option name="scopesOrder">
+      <list>
+        <option value="All Changed Files" />
+        <option value="Open Files" />
+        <option value="Project Files" />
+        <option value="Scratches and Consoles" />
+      </list>
+    </option>
+    <inspection_tool class="AngularAmbiguousComponentTag" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularCliAddDependency" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularInaccessibleComponentMemberInAotMode" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularIncorrectTemplateDefinition" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularInsecureBindingToEvent" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularInvalidAnimationTriggerAssignment" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularInvalidEntryComponent" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularInvalidExpressionResultType" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularInvalidI18nAttribute" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularInvalidImportedOrDeclaredSymbol" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularInvalidSelector" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularInvalidTemplateReferenceVariable" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularMissingEventHandler" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularMissingOrInvalidDeclarationInModule" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularMultipleStructuralDirectives" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularNonEmptyNgContent" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularRecursiveModuleImportExport" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularUndefinedBinding" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularUndefinedModuleExport" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="AngularUndefinedTag" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Open Files" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="numpy" />
+          <option value="training_loop_VBR.tensorflow" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
