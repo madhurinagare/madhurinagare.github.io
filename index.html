@@ -39,49 +39,88 @@
 <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
 <style>
-p {
-  font-size: 18px;
-}
-h2 {
-  font-size: 24px;
-}
-        /* Flex container styles to create two columns */
-        .columns-container {
-                display: flex;
-            }
+    p {
+      font-size: 18px;
+    }
 
-        /* Define the styles for the two columns */
-       .left-column {
-            flex: 1.2; /* Left column will take 1 part of the available space */
-            padding: 10px;
-        }
-       .right-column {
-            flex: 2.6; /* Right column will take 2 parts of the available space */
-            padding: 10px;
+    h2 {
+      font-size: 24px;
+    }
+    /* Flex container styles to create two columns */
+    .columns-container {
+            display: flex;
         }
 
-        /* Use graduation cap image as the bullet */
-        .right-column ul {
-            list-style-image: url('assets/img/cap.png');
-            /* Replace 'graduation-cap.png' with the actual filename and path of your image */
-            padding-left: 0;
-        }
-        .right-column li {
-            font-size: 18px; /* Adjust the font size as needed */
-        }
-            li span {
-            display: block;
-            align-items: center; /* Center the flex items (the <span> elements and bullet) vertically */
+    /* Define the styles for the two columns */
+   .left-column {
+        flex: 1.4; /* Left column will take 1 part of the available space */
+        padding: 10px;
+    }
 
-        }
-         .black-text {
-            color: black;
-        }
+   .right-column {
+        flex: 2.6; /* Right column will take 2 parts of the available space */
+        padding: 10px;
+    }
+      /* Change font size in the left column */
+  .left-column {
+    font-size: 20px; /* Adjust the value as needed */
+  }
 
-        /* Style the second line as gray */
-        .gray-text {
-            color: gray;
-        }
+    /* Increase spacing between bullets in the left column */
+  .left-column ul li {
+    margin-bottom: 12px; /* Adjust the value as needed */
+  }
+
+    /* Use graduation cap image as the bullet */
+    .right-column ul {
+        list-style: none; /* Remove default list styles */
+        padding: 0px;
+    }
+
+        /* Override Bootstrap's default list item styles */
+
+    .right-column li {
+    font-size: 14px; /* Adjust the font size as needed */
+    display: flex; /* Use Flexbox to create a flex container */
+    align-items: center; /* Center the flex items vertically */
+    list-style: none; /* Remove default list styles */
+    margin-bottom: 5px; /* Add some space between list items */
+    }
+
+
+    /* Style the bullet */
+    .cap-bullet {
+        width: 20px; /* Set the width of the graduation cap symbol */
+        height: 20px; /* Set the height of the graduation cap symbol */
+        background-image: url('assets/img/cap.png'); /* Replace with the path to your graduation cap image */
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 10px; /* Add spacing between the bullet and the content */
+    }
+
+     /* New class for the star bullet */
+  .work-bullet {
+    width: 16px;
+    height: 16px;
+    background-image: url('assets/img/work.png'); /* Replace with the path to your star image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+  }
+
+    li span {
+        display: block;
+        align-items: center; /* Center the flex items (the <span> elements and bullet) vertically */
+    }
+
+     .black-text {
+        color: black;
+    }
+
+    /* Style the second line as gray */
+    .gray-text {
+        color: gray;
+    }
 </style>
   </head>
 
@@ -224,16 +263,6 @@ class="profile float-right">
 
 <p style="width:500px;text-align:justify">Hi! I am a Ph.D. candidate in the <a href="https://engineering.purdue.edu/ECE/"> <span style="color:#020202e5"> Department of Electrical & Computer Engineering</span></a> at Purdue University. I work with <a href="https://engineering.purdue.edu/~bouman/"><span style="color:#188a51e5">Prof. Charles A. Bouman</span></a> to develop novel and efficient solutions to produce noise-free, sharper and clinically acceptable reconstructions of medical CT (X-ray computed tomography).
     I have designed algorithms to operate at user-specified points on the bias-variance trade-off curve with deep neural networks, thereby to retain and produce clinically important texture in CT images. Currently, I am working on a reconstruction algorithm for photon counting CT.
-
-
-
-<!-- <h5 id="previously"><b>Previously</b></h5> -->
-<p style="width:775px;text-align:justify">Before starting my Ph.D., I spent three amazing years at NEC Corporation, Japan as an industrial researcher. I along with my team developed an atmospheric correction module for satellite images.
-I graduated with Masters in Geoinformatics from <a href="https://www.iitb.ac.in/"><span style="color:#020202e5">Indian Institute of Technology, Bombay, India</span></a> in 2015. For my Master's thesis, I worked with <a href="http://www.csre.iitb.ac.in/bkmohan/"><span style="color:#188a51e5">Prof. Krishna Mohan Buddhiraju</span> </a>on decision tree classifiers for satellite images.
-
-I completed Bachelors in Electronics and Telecommunication from <a href="https://www.coep.org.in/"><span style="color:#020202e5">College of Engineering, Pune, India</span></a> in 2013.
-<p style="width:775px;text-align:justify">I spend my spare time in gardening and running. Recently, I have been doing powerlifting too! </p>
-
     </div>
    <div class="columns-container">
          <div class="left-column">
@@ -249,9 +278,32 @@ I completed Bachelors in Electronics and Telecommunication from <a href="https:/
 <div class="right-column">
         <h2>Education</h2>
         <ul>
-            <li><span>PhD in Electrical and Computer Engineering, May 2024 (expected)</span><span class="gray-text">Advisor: Dr. Charles A. Bouman, Purdue University</span></li>
-            <li><span>MTech in Geoinformatics and Natural Resources Engineering, 2015</span><span class="gray-text">Advisor: Dr. K. M. Buddhiraju, Indian Institute of Technology Bombay</span></li>
-            <li><span>BTech in Electronics and Telecommunication Engineering, 2015</span><span class="gray-text">College of Engineering, Pune </span></li>
+            <li>
+                <span class="cap-bullet"></span> <!-- Added span element with the .cap-bullet class -->
+                <span class="black-text">PhD in Electrical and Computer Engineering, May 2024 (expected)
+                        <span class="gray-text">Advisor: Dr. Charles A. Bouman, Purdue University</span>
+                </span>
+            </li>
+            <li>
+                <span class="cap-bullet"></span> <!-- Added span element with the .cap-bullet class -->
+                <span class="black-text">MTech in Geoinformatics and Natural Resources Engineering, 2015
+                    <span class="gray-text">Advisor: Dr. K. M. Buddhiraju, Indian Institute of Technology Bombay</span>
+                </span>
+            </li>
+            <li>
+                <span class="cap-bullet"></span> <!-- Added span element with the .cap-bullet class -->
+                <span class="black-text">BTech in Electronics and Telecommunication Engineering, 2013
+                    <span class="gray-text">College of Engineering, Pune</span>
+                </span>
+            </li>
+        </ul>
+      <h2>Work Experience</h2>
+        <ul>
+                        <li>
+                <span class="work-bullet"></span> <!-- Added span element with the .cap-bullet class -->
+                <span class="black-text">2015 - 2018| Assistant Researcher at NEC Corporation, Tokyo, Japan
+                </span>
+            </li>
         </ul>
     </div>
    </div>
