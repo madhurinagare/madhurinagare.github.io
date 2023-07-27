@@ -45,6 +45,43 @@ p {
 h2 {
   font-size: 24px;
 }
+        /* Flex container styles to create two columns */
+        .columns-container {
+                display: flex;
+            }
+
+        /* Define the styles for the two columns */
+       .left-column {
+            flex: 1.2; /* Left column will take 1 part of the available space */
+            padding: 10px;
+        }
+       .right-column {
+            flex: 2.6; /* Right column will take 2 parts of the available space */
+            padding: 10px;
+        }
+
+        /* Use graduation cap image as the bullet */
+        .right-column ul {
+            list-style-image: url('assets/img/cap.png');
+            /* Replace 'graduation-cap.png' with the actual filename and path of your image */
+            padding-left: 0;
+        }
+        .right-column li {
+            font-size: 18px; /* Adjust the font size as needed */
+        }
+            li span {
+            display: block;
+            align-items: center; /* Center the flex items (the <span> elements and bullet) vertically */
+
+        }
+         .black-text {
+            color: black;
+        }
+
+        /* Style the second line as gray */
+        .gray-text {
+            color: gray;
+        }
 </style>
   </head>
 
@@ -185,8 +222,10 @@ class="profile float-right">
 -->
 
 
-<p style="width:500px;text-align:justify">Hi! I am a fifth year Ph.D. student in the <a href="https://engineering.purdue.edu/ECE/"> <span style="color:#020202e5"> Department of Electrical & Computer Engineering</span></a> at Purdue University. I work with <a href="https://engineering.purdue.edu/~bouman/"><span style="color:#188a51e5">Prof. Charles A. Bouman</span></a> to improve the quality of medical CT (X-ray computed tomography) images. We work at the crossroads of computational imaging, machine learning, and signal processing.
-Specifically, my research focuses on controlling noise-resolution-texture tradeoff in CT images with deep neural network (DNN) based methods. 
+<p style="width:500px;text-align:justify">Hi! I am a Ph.D. candidate in the <a href="https://engineering.purdue.edu/ECE/"> <span style="color:#020202e5"> Department of Electrical & Computer Engineering</span></a> at Purdue University. I work with <a href="https://engineering.purdue.edu/~bouman/"><span style="color:#188a51e5">Prof. Charles A. Bouman</span></a> to develop novel and efficient solutions to produce noise-free, sharper and clinically acceptable reconstructions of medical CT (X-ray computed tomography).
+    I have designed algorithms to operate at user-specified points on the bias-variance trade-off curve with deep neural networks, thereby to retain and produce clinically important texture in CT images. Currently, I am working on a reconstruction algorithm for photon counting CT.
+
+
 
 <!-- <h5 id="previously"><b>Previously</b></h5> -->
 <p style="width:775px;text-align:justify">Before starting my Ph.D., I spent three amazing years at NEC Corporation, Japan as an industrial researcher. I along with my team developed an atmospheric correction module for satellite images.
@@ -196,7 +235,26 @@ I completed Bachelors in Electronics and Telecommunication from <a href="https:/
 <p style="width:775px;text-align:justify">I spend my spare time in gardening and running. Recently, I have been doing powerlifting too! </p>
 
     </div>
-
+   <div class="columns-container">
+         <div class="left-column">
+        <h2>Research Interests</h2>
+        <ul>
+            <li>Machine learning</li>
+            <li>Inverse problems</li>
+            <li>Medical imaging</li>
+            <li>Deep learning</li>
+            <li>Image processing</li>
+        </ul>
+    </div>
+<div class="right-column">
+        <h2>Education</h2>
+        <ul>
+            <li><span>PhD in Electrical and Computer Engineering, May 2024 (expected)</span><span class="gray-text">Advisor: Dr. Charles A. Bouman, Purdue University</span></li>
+            <li><span>MTech in Geoinformatics and Natural Resources Engineering, 2015</span><span class="gray-text">Advisor: Dr. K. M. Buddhiraju, Indian Institute of Technology Bombay</span></li>
+            <li><span>BTech in Electronics and Telecommunication Engineering, 2015</span><span class="gray-text">College of Engineering, Pune </span></li>
+        </ul>
+    </div>
+   </div>
     
       <div class="news">
   <h2>News</h2>
