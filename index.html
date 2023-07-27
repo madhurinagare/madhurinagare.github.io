@@ -46,6 +46,10 @@
     h2 {
       font-size: 24px;
     }
+    h3 {
+      font-size: 20px;
+        font-weight: bold;
+    }
     /* Flex container styles to create two columns */
     .columns-container {
             display: flex;
@@ -63,8 +67,17 @@
     }
       /* Change font size in the left column */
   .left-column {
-    font-size: 20px; /* Adjust the value as needed */
+    font-size: 18px; /* Adjust the value as needed */
   }
+       /* Use graduation cap image as the bullet */
+    .left-column ul {
+        padding: 20px;
+    }
+   /* Use graduation cap image as the bullet */
+    .right-column ul {
+        list-style: none; /* Remove default list styles */
+        padding: 0px;
+    }
 
     /* Increase spacing between bullets in the left column */
   .left-column ul li {
@@ -263,10 +276,11 @@ class="profile float-right">
 
 <p style="width:500px;text-align:justify">Hi! I am a Ph.D. candidate in the <a href="https://engineering.purdue.edu/ECE/"> <span style="color:#020202e5"> Department of Electrical & Computer Engineering</span></a> at Purdue University. I work with <a href="https://engineering.purdue.edu/~bouman/"><span style="color:#188a51e5">Prof. Charles A. Bouman</span></a> to develop novel and efficient solutions to produce noise-free, sharper and clinically acceptable reconstructions of medical CT (X-ray computed tomography).
     I have designed algorithms to operate at user-specified points on the bias-variance trade-off curve with deep neural networks, thereby to retain and produce clinically important texture in CT images. Currently, I am working on a reconstruction algorithm for photon counting CT.
+    <p>I spend my spare time in gardening and running. Recently, I have been doing powerlifting too!</p>
     </div>
    <div class="columns-container">
          <div class="left-column">
-        <h2>Research Interests</h2>
+        <h3>Research Interests</h3>
         <ul>
             <li>Machine learning</li>
             <li>Inverse problems</li>
@@ -276,7 +290,7 @@ class="profile float-right">
         </ul>
     </div>
 <div class="right-column">
-        <h2>Education</h2>
+        <h3>Education</h3>
         <ul>
             <li>
                 <span class="cap-bullet"></span> <!-- Added span element with the .cap-bullet class -->
@@ -297,7 +311,7 @@ class="profile float-right">
                 </span>
             </li>
         </ul>
-      <h2>Work Experience</h2>
+      <h3>Work Experience</h3>
         <ul>
                         <li>
                 <span class="work-bullet"></span> <!-- Added span element with the .cap-bullet class -->
