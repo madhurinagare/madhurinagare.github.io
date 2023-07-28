@@ -153,7 +153,7 @@
   </header>
 
   <article>
-    <embed id="resumeEmbed" src="../assets/pdf/Resume_Madhuri.pdf" type="application/pdf" width="800" height="2000" />
+    <embed id="resumeEmbed" src="../assets/pdf/Resume_Madhuri.pdf" type="application/pdf" width="100%" height="2000" />
   </article>
 
 
@@ -163,7 +163,7 @@
   </header>
 
   <article>
-    <embed id="cvEmbed" src="../assets/pdf/CV_v1.pdf" type="application/pdf" width="800" height="2000" />
+    <embed id="cvEmbed" src="../assets/pdf/CV_v1.pdf" type="application/pdf" width="100%" height="2000" />
   </article>
 
 
@@ -182,35 +182,6 @@
     
   </div>
 </footer>
-
- <!-- JavaScript to set the width of embed elements -->
-  <script>
-    // Function to set the width of the embed elements to the container width
-    function setEmbedWidthToContainerWidth() {
-      var container = document.querySelector('.container');
-      var containerWidth = container.offsetWidth;
-
-      // Get the embed elements by their ids
-      var resumeEmbed = document.getElementById('resumeEmbed');
-      var cvEmbed = document.getElementById('cvEmbed');
-
-      // Set the width of the embed elements to the container width
-      resumeEmbed.setAttribute('width', containerWidth);
-      cvEmbed.setAttribute('width', containerWidth);
-    }
-
-    // Call the function after the content is fully loaded
-    window.addEventListener('load', function () {
-      setEmbedWidthToContainerWidth();
-    });
-
-    // Call the function again if the window is resized
-    window.addEventListener('resize', function () {
-      setEmbedWidthToContainerWidth();
-    });
-  </script>
-
-
 
   </body>
 
