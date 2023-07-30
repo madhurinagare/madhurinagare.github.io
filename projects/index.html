@@ -43,9 +43,68 @@
             font-size: 24px;
             /*font-weight: bold;*/
         }
+        h4 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: red;
+        }
+        h5 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: green;
+        }
+        p {
+            font-family: Arial, sans-serif;
+          font-size: 18px;
+        }
+            /* Add space between text and container */
+    .text-container {
+      margin-bottom: 40px; /* Adjust the margin value to add desired space */
+    margin-top: 40px;
+    }
           .post-header {
     padding-bottom: 40px; /* Adjust the value as needed */
   }
+          /* Specify the width and height of the GIF */
+    .gif-container {
+      /*width: 520px; !* Replace with your desired width *!*/
+      /*height: 300px; !* Replace with your desired height *!*/
+      overflow: hidden; /* Hide any overflow to maintain the specified size */
+    }
+    .gif-container img {
+      width: 100%;
+      height: 100%;
+    }
+       .container {
+      display: flex;
+    }
+
+    .left-column {
+      flex: 1.2;
+      padding-right: 20px;
+              position: relative; /* Add relative positioning to the left column */
+    }
+
+    .right-column {
+      flex: 1;
+      padding-left: 20px;
+    }
+    .png-image {
+      max-width: 100%;
+      height: auto;
+    }
+    /* Add border between left and right columns */
+    .left-column::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 4px;
+      background-color: lightcoral; /* Adjust the color of the border as per your preference */
+    }
     </style>
   </head>
 
@@ -149,11 +208,11 @@
 
 
       <abbr2 class="badge"><a href="/assets/pdf/2022_npsf_icip.pdf" target="_blank"><span
-                style="color:#db2222; font-size:14px;">PDF</span></a></abbr2>
+                style="color:royalblue; font-size:14px;">PDF</span></a></abbr2>
         <abbr2 class="badge"><a href="/assets/pdf/ICIP_poster_v2.1.pdf" target="_blank"><span
-            style="color:#db2222; font-size:14px;">Poster</span></a></abbr2>
+            style="color:royalblue; font-size:14px;">Poster</span></a></abbr2>
         <abbr2 class="badge"><a href="https://ieeexplore.ieee.org/document/9897227" target="_blank"><span
-            style="color:#db2222; font-size:14px;">IEEE Xplore</span></a></abbr2>
+            style="color:royalblue; font-size:14px;">IEEE Xplore</span></a></abbr2>
         <abbr2 class="badge"><span
                 style="color:#020202e5; font-size:14px;">Patent in progress</span></abbr2>
         <abbr2 class="badge"><span
@@ -162,13 +221,32 @@
           <!-- <abbr class="badge"><a href="https://github.com/allenai/cartography" target="_blank">Code</a></abbr> -->
 
         </div>
-          <!-- Add the video element -->
-  <video width="640" height="360" controls autoplay>
-    <source src="/assets/video/NPSF_Concept.mp4" type="video/quicktime">
-    Your browser does not support the video tag.
-  </video>
-</div>
+            <div class="text-container">
+     <p>To preserve texture while sharpening, we preserve noise
+energy and texture from the input by adding appropriately scaled noise while
+training. NPSF has been favored clinically!</p>
+  </div>
 
+            <div class="container">
+    <div class="left-column">
+        <h5> NPSF concept: Appropriate Training Pairs to Reduce Bias</h5>
+      <!-- Add the GIF image -->
+      <div class="gif-container">
+                  <img src="/assets/video/NPSF_Concept.gif" alt="GIF Image">
+      </div>
+    </div>
+
+    <div class="right-column">
+        <h4>NPSF Results: Clincal Exam</h4>
+              <div class="gif-container">
+                <!-- Add the PNG image -->
+      <img class="png-image" src="/assets/img/results_npsF_example.png" alt="PNG Image">
+
+      </div>
+    </div>
+  </div>
+
+</div>
     </div>
 
     <!-- Footer -->
