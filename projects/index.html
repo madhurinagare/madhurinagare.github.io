@@ -40,8 +40,9 @@
 
     <style>
         h3 {
-            font-size: 24px;
-            /*font-weight: bold;*/
+            font-size: 28px;
+            margin-top: 60px;
+            font-weight: bold;
         }
         h4 {
             font-size: 16px;
@@ -65,7 +66,7 @@
     margin-top: 40px;
     }
           .post-header {
-    padding-bottom: 40px; /* Adjust the value as needed */
+    padding-bottom: 0px; /* Adjust the value as needed */
   }
           /* Specify the width and height of the GIF */
     .gif-container {
@@ -81,14 +82,25 @@
       display: flex;
     }
 
-    .left-column {
-      flex: 1.2;
+    .left-column_leftwt {
+      flex: 1.4;
+      padding-right: 20px;
+              position: relative; /* Add relative positioning to the left column */
+    }
+
+    .right-column_leftwt {
+      flex: 1;
+      padding-left: 20px;
+    }
+
+        .left-column {
+      flex: 1;
       padding-right: 20px;
               position: relative; /* Add relative positioning to the left column */
     }
 
     .right-column {
-      flex: 1;
+      flex: 1.2;
       padding-left: 20px;
     }
     .png-image {
@@ -103,7 +115,17 @@
       right: 0;
       height: 100%;
       width: 4px;
-      background-color: lightcoral; /* Adjust the color of the border as per your preference */
+      background-color: lightsteelblue; /* Adjust the color of the border as per your preference */
+    }
+        /* Add border between left and right columns */
+    .left-column_leftwt::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 4px;
+      background-color: lightsteelblue; /* Adjust the color of the border as per your preference */
     }
     </style>
   </head>
@@ -202,6 +224,55 @@
 <!--     <p class="desc"><a href="https://scholar.google.com/citations?user=erf-KAQAAAAJ&hl=en">Google Scholar</a></p>-->
   </header>
 
+ <!--        BR project   -->
+          <h3>  Bias-Reducing Cost Function
+          </h3>
+
+                  <div class="links abbr">
+
+  <abbr2 class="badge"><a href="https://engineering.purdue.edu/~bouman/publications/orig-pdf/2021-icassp-Nagare.pdf" target="_blank"><span
+                style="color:royalblue; font-size:14px;">PDF</span></a></abbr2>
+        <abbr2 class="badge"><a href="/assets/pdf/BR_poster.pdf" target="_blank"><span
+                style="color:royalblue; font-size:14px;">Poster</span></a></abbr2>
+          <abbr2 class="badge"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9413855" target="_blank"><span
+                style="color:royalblue; font-size:14px;">IEEE Xplore</span></a></abbr2>
+   <abbr2 class="badge"><a href="https://patentimages.storage.googleapis.com/7c/4b/b8/bf5ac554d17583/US20220375038A1.pdf" target="_blank"><span
+                style="color:royalblue; font-size:14px;">Patent</span></a></abbr2>
+ <abbr2 class="badge"><span
+                style="color:#020202e5; font-size:14px;">Contact for code</span></abbr2>
+          <!-- <abbr class="badge"><a href="https://github.com/allenai/cartography" target="_blank">Code</a></abbr> -->
+
+
+
+
+        </div>
+            <div class="text-container">
+     <p>To preserve texture we present a novel approach to designing a cost
+function that penalizes variance and bias differently, as opposed to equal penalties in the mean squared error (MSE).
+         </p>
+  </div>
+
+            <div class="container">
+    <div class="left-column_leftwt">
+        <h5> Idea: Bias weighted MSE realized with Siamese networks
+        </h5>
+      <!-- Add the GIF image -->
+      <div class="gif-container">
+                <img class="png-image" src="/assets/img/BR_concept.png" alt="PNG Image">
+      </div>
+    </div>
+
+    <div class="right-column_leftwt">
+        <h4>Results: Clincal Exam</h4>
+              <div class="gif-container">
+                <!-- Add the PNG image -->
+      <img class="png-image" src="/assets/img/BR_result.png" alt="PNG Image">
+      </div>
+    </div>
+  </div>
+<!--          BR project done!-->
+
+<!--        NPSF project   -->
           <h3> Noise Preserving Sharpening Filter (NPSF)
           </h3>
         <div class="links abbr">
@@ -245,6 +316,7 @@ training. NPSF has been favored clinically!</p>
       </div>
     </div>
   </div>
+<!--          NPSF project done!-->
 
 </div>
     </div>
@@ -255,9 +327,7 @@ training. NPSF has been favored clinically!</p>
 <footer class="fixed-bottom">
   <div class="container mt-0">
     &copy; Copyright 2023 Madhuri Nagare.
-    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-
-
+    Powered by <a href="http://jekyllrb.com/" target="_blank"> Jekyll </a> with <a href="https://github.com/alshedivat/al-folio"> al-folio </a> theme.
   </div>
 </footer>
 
