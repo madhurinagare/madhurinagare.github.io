@@ -127,6 +127,50 @@
         .gray-text {
             color: gray;
         }
+
+
+    /*    project box */
+          .box-container {
+                display: flex;
+            }
+            .box {
+      width: 250px;
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+                margin-right: 20px;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .box img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 0px 0;
+    }
+
+    .box .title {
+      font-weight: bold;
+    }
+
+    .box .detail {
+      font-weight: normal;
+      text-align: justify;
+      margin: 5px;
+    }
+
+    .box a {
+      display: block;
+      text-decoration: none;
+      color: #333;
+      margin-top: 10px;
+    }
     </style>
 </head>
 
@@ -270,6 +314,44 @@
         </ul>
     </div>
    </div>
+
+      <div>
+            <h2>Research</h2>
+            <div class="box-container"> <!-- New parent div for the boxes -->
+
+<!--          tmgan box -->
+          <div class="box">
+      <a href="/projects/#project_tmgan" target="_blank">
+  <p class="title">Texture Matching GAN</p>
+  <img src="/assets/img/thumbnail_tmgan.png" alt="Image">
+  <p class="detail">
+    Produces uniform texture with more detail while denoising & sharpening CT images.
+    Alleviates the risk of <i>hallucination</i>!
+  </p>
+</a>
+</div>
+<!--          BR box-->
+          <div class="box">
+      <a href="/projects/#project_br" target="_blank">
+  <p class="title">Bias-Reducing Cost Function</p>
+  <img src="/assets/img/thumbnail_br.png" alt="Image">
+  <p class="detail">
+    Recovers more texture and detail with proposed bias weighted MSE realized with a Siamese network
+  </p>
+</a>
+</div>
+<!--                npsf box-->
+                <div class="box">
+      <a href="/projects/#project_npsf" target="_blank">
+  <p class="title">Noise Preserving Sharpening Filter (NPSF)</p>
+  <img src="/assets/img/thumbnail_npsf.png" alt="Image">
+  <p class="detail">
+  Preserves texture while sharpening by adding noise while training. Evaluated clinically!
+  </p>
+</a>
+</div>
+            </div>
+      </div>
     
       <div class="news">
   <h2>News</h2>
